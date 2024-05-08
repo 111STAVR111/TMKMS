@@ -108,8 +108,24 @@ sudo journalctl -fu tmkmsd-canto.service -o cat
 
 - LAST STEPS. Activate signing from `canto node` side
 - Find field `priv_validator_laddr = ""` at dir `$HOME/.cantod/config/config.toml` and edit to your Validator `IP + port`
-- Make sure your firewall open only for KMS server IP to allow connect to port 26658 (or any custom port u set)
 - Example : `priv_validator_laddr = "tcp://0.0.0.0:26658"`  (Line 68 +-)
+
+<details>
+<summary>Make sure your firewall open only for KMS server IP to allow connect to port 26658 (or any custom port u set) </summary>
+
+```python
+apt install ufw
+ufw allow 22
+ufw allow 80
+ufw allow 443
+ufw deny 26658
+ufw allow from <ip tmkms server>
+ufw enable
+ufw status
+```
+
+</details>
+
 
 ### Restarting the node Validator Node
 ```python
