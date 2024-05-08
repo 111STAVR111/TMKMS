@@ -127,12 +127,12 @@ ufw status
 </details>
 
 
-### Restarting the node Validator Node
+### Restarting the Validator Node
 ```python
 sudo systemctl restart cantod && sudo journalctl -fu cantod -o cat
 ```
 
-<h2 align="center">make sure that the logs are good  </h2>
+<h2 align="center">Make sure that the logs are good  </h2>
 
 ![Good](https://github.com/111STAVR111/TMKMS/assets/77785195/d0fe10a7-8db0-473f-926e-188aa9ef7137)
 
