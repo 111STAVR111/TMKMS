@@ -1,5 +1,8 @@
 <h1 align="center">TMKMS</h1>
 
+![tmkms](https://github.com/111STAVR111/TMKMS/assets/77785195/3cac0560-034e-4ba8-bcb6-82c1975eeccf)
+
+
 ### The Tendermint Key Management System (or TMKMS) should be used by any validator currently or intending to be in the active validator set. This application mitigates the risk of double-signing and provides high-availability to validator keys while keeping these keys on a separate physical host. While TMKMS can be used on the same machine as the validator, it is recommended to be on a separate host.
 [DOCS](https://docs.osmosis.zone/osmosis-core/keys/tmkms/)
 
