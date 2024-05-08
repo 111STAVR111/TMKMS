@@ -1,6 +1,7 @@
 <h1 align="center">TMKMS</h1>
 
 ### The Tendermint Key Management System (or TMKMS) should be used by any validator currently or intending to be in the active validator set. This application mitigates the risk of double-signing and provides high-availability to validator keys while keeping these keys on a separate physical host. While TMKMS can be used on the same machine as the validator, it is recommended to be on a separate host.
+[DOCS](https://docs.osmosis.zone/osmosis-core/keys/tmkms/)
 
 ## Let's look at an example - `Canto`
 
@@ -126,3 +127,5 @@ sudo systemctl restart cantod && sudo journalctl -fu cantod -o cat
 `sudo journalctl -fu tmkmsd-canto -o cat`
 ### Restart
 `sudo systemctl restart tmkmsd-canto && sudo journalctl -fu tmkmsd-canto -o cat`
+
+
